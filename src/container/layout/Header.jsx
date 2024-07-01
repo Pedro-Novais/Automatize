@@ -9,7 +9,7 @@ function Header() {
 
     return (
         <header>
-            <div className='btnSideBar' onClick={openSidebar}>Clique</div>
+            <div className='btnSideBar' onClick={openSidebar}>Clique Aqui</div>
             <p>Automatize</p>
         </header>
     )
