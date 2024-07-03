@@ -13,7 +13,7 @@
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: fixed;
     top: 0;
@@ -26,8 +26,41 @@ header {
 }
 
 header, p{
-
     font-size: 25px;
+    margin: auto;
+}
+
+
+.iconSideBar{
+    height: 25px;
+    position: absolute;
+    left: 2%;
+    transition: .5s;
+    color: white;
+}
+
+.iconSideBar:hover{
+    cursor: pointer;
+}
+
+@keyframes openSideBar{
+    from{
+
+        width: 0%;
+    }
+    to{
+        width: 20%;
+    }
+}
+
+@keyframes closeSideBar{
+    from{
+
+        width: 20%;
+    }
+    to{
+        width: 0%;
+    }
 }
 
 .sideBar{
@@ -42,6 +75,15 @@ header, p{
     padding-top: 20px; 
     transition: transform 0.3s ease; 
     z-index: 5;
+    animation: openSideBar .5s ease-in-out;
+}
+
+.container{
+    background-color: #0A7AA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 footer{

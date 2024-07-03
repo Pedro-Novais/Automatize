@@ -1,5 +1,7 @@
 import { useContext } from 'react'
 import { SideBarContext } from './SideBarContext'
+
+import { FaAlignJustify } from "react-icons/fa";
 import './style.css'
 
 function SideBar() {
