@@ -78,6 +78,7 @@ header, p{
     transition: transform 0.3s ease; 
     z-index: 5;
     animation: openSideBar .5s ease;
+    white-space: nowrap;
 }
 
 .topSideBar{
@@ -93,7 +94,7 @@ header, p{
     position: absolute;
     right: 10px;
     height: 7%;
-    width: 9%;
+    width: 7%;
 }
 
 .iconCloseSideBar:hover{
@@ -103,6 +104,9 @@ header, p{
 .topSideBar, p{
     text-transform: uppercase;
     letter-spacing: .1em;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Shows '...' when text overflows */
+    white-space: nowrap;
 }
 
 .contentLinksSideBar{
@@ -135,13 +139,15 @@ header, p{
     list-style: none;
     border-radius: .5rem;
     text-align: center;
-    background-color: var(--color-five);
-    color: var(--color-two);
-    transition: .2s;
+    color: var(--color-five);
+    border: solid 1px var(--color-five);
+    transition: .4s;
 }
 
 .contentLinksSideBar ul li:hover{
-    width: 85%;
+    background-color: var(--color-five);
+    color: var(--color-two);
+    border: none;
     cursor: pointer;
 }
 

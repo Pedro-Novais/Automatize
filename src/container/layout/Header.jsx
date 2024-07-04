@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { SideBarContext } from './SideBarContext'
 
-import { FaAlignJustify } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
 import './style.css'
 
 function Header() {
@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <header>
-            <FaAlignJustify className="iconSideBar" onClick={openSidebar}/>
+            <FaBars className="iconSideBar" onClick={openSidebar}/>
             <p>Automatize</p>
         </header>
     )

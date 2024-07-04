@@ -2,7 +2,7 @@ function Footer () {
 
     return (
         <footer>
-            Direitos reservados a mim, porra
+            Direitos reservados a mim
         </footer>
     )
 }
