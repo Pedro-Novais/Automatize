@@ -64,22 +64,88 @@ header, p{
 }
 
 .sideBar{
-    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 20%; 
     height: 100%; 
     position: fixed; 
     top: 0; 
     left: 0; 
     background-color: var(--color-one); 
-    color: #ff0000; 
-    padding-top: 20px; 
+    padding-top: 10px; 
     transition: transform 0.3s ease; 
     z-index: 5;
-    animation: openSideBar .5s ease-in-out;
+    animation: openSideBar .5s ease;
+}
+
+.topSideBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-five);
+    height: 5%;
+    width: 100%;
+}
+
+.iconCloseSideBar{
+    position: absolute;
+    right: 10px;
+    height: 7%;
+    width: 9%;
+}
+
+.iconCloseSideBar:hover{
+    cursor: pointer;
+}
+
+.topSideBar, p{
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.contentLinksSideBar{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.contentLinksSideBar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contentLinksSideBar ul a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.contentLinksSideBar ul a li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 3rem;
+    margin-bottom: 10%;
+    list-style: none;
+    border-radius: .5rem;
+    text-align: center;
+    background-color: var(--color-five);
+    color: var(--color-two);
+    transition: .2s;
+}
+
+.contentLinksSideBar ul li:hover{
+    width: 85%;
+    cursor: pointer;
 }
 
 .container{
-    background-color: #0A7AA6;
     display: flex;
     justify-content: center;
     align-items: center;

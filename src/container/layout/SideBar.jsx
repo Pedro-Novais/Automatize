@@ -1,16 +1,17 @@
 import { useContext } from 'react'
 import { SideBarContext } from './SideBarContext'
-
-import { FaAlignJustify } from "react-icons/fa";
-import './style.css'
+import { TitleSideBar } from "./components/TitleSideBar";
+import { ContentSideBar } from './components/ContentSideBar';
+import './style.css';
 
 function SideBar() {
 
-    const { isSidebarOpen, closeSidebar  } = useContext(SideBarContext)
+    const { isSidebarOpen, closeSidebar } = useContext(SideBarContext)
 
     return (
-        <div className='sideBar' style={{display: isSidebarOpen ? 'flex' : 'none'}}>
-            <div onClick={closeSidebar}>teste</div>
+        <div className='sideBar' style={{ display: isSidebarOpen ? 'flex' : 'none' }}>
+            <TitleSideBar eventClose={closeSidebar} style="topSideBar" />
+            <ContentSideBar />
         </div>
     )
 }
