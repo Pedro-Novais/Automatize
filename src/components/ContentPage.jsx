@@ -1,7 +1,7 @@
-export function ContentPage({style}){
+export function ContentPage(props, style){
     return (
         <div className={`contentPage ${style}`}>
-            a
+            {props.children}
         </div>
     )
 }
