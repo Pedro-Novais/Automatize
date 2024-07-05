@@ -1,8 +1,10 @@
+import { ContentServices } from "./ContentServices"
+
 function Services(){
 
     return (
         <div className="content">
-            Página serviço
+            <ContentServices />
         </div>
     )
 }

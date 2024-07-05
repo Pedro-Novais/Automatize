@@ -1,8 +1,10 @@
+import { ContentProfile } from "./ContentProfile"
+
 function Profile(){
 
     return (
         <div className="content">
-            Página Perfil
+            <ContentProfile />
         </div>
     )
 }

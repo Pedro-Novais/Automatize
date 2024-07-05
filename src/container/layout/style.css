@@ -51,7 +51,6 @@ header, p{
 }
 
 .infoProfile:hover{
-    background-color: unset;
     border: solid 1px var(--color-five);
     cursor: pointer; 
 }
@@ -116,6 +115,7 @@ header, p{
     transition: transform 0.3s ease; 
     z-index: 5;
     white-space: nowrap;
+    /* animation: openSideBar .4s ease; */
 }
 
 .contentLinksSideBar{
@@ -165,4 +165,17 @@ header, p{
     align-items: center;
     width: 100%;
     height: 90%;
+}
+
+.titleContents{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.contentPage{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
 }

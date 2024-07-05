@@ -1,10 +1,10 @@
-import "./style.css"
+import { ContentProject } from "./ContentProject"
 
 function Projects(){
 
     return (
         <div className="content">
-            Página Projetos
+            <ContentProject />
         </div>
     )
 }
