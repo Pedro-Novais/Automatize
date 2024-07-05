@@ -1,14 +1,13 @@
 import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import { SideBarProvider } from "./container/layout/SideBarContext"
+import { SideBarProvider } from "./context/SideBarContext"
 import Header from "./container/layout/Header"
 import SideBar from "./container/layout/SideBar"
-import Footer from "./container/layout/Footer"
 import Container from "./container/layout/Container"
 import Profile from "./container/profile/Profile"
 import Projects from "./container/projects/Projects"
-import Signature from "./container/signature/Signature"
+import Services from "./container/service/Services"
 import './style/index.css'
 
 function App() {
@@ -22,10 +21,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Profile />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/signature" element={<Signature />} />
+            <Route path="/services" element={<Services />} />
           </Routes>
         </Container>
-        <Footer />
       </Router>
     </SideBarProvider>
   )

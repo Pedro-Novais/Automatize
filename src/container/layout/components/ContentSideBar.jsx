@@ -6,7 +6,7 @@ export function ContentSideBar(){
             <ul>
                 <Link to={'/'}><li>Perfil</li></Link>
                 <Link to={'/projects'}><li>Projetos</li></Link>
-                <Link to={'/signature'}><li>Serviços</li></Link>
+                <Link to={'/services'}><li>Serviços</li></Link>
             </ul>
         </div>
     )

@@ -1,10 +1,10 @@
-function Profile(){
+function Services(){
 
     return (
         <div className="content">
-            Página Perfil
+            Página serviço
         </div>
     )
 }
 
-export default Profile
+export default Services

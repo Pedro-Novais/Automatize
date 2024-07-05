@@ -6,16 +6,11 @@
     --color-five: #f0e4d5;
 }
 
-.container{
-    width: 100%;
-    height: 80%;
-}
-
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
     height: 10%;
@@ -27,15 +22,59 @@ header {
 
 header, p{
     font-size: 25px;
+    /* margin: auto; */
+}
+
+.iconName{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.linkProfileStyle{
+    width: 20%;
+    height: 70%;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.infoProfile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    border-radius: .2em;
+    background-color:#f0e4d530;
+    transition: .2s;
+}
+
+.infoProfile:hover{
+    background-color: unset;
+    border: solid 1px var(--color-five);
+    cursor: pointer; 
+}
+
+.infoProfile p{
     margin: auto;
+    font-size: 1rem;
+    text-transform: capitalize;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--color-five);
+}
+
+.infoProfile .iconProfile{
+    color: var(--color-five);
+    width: 20%;
 }
 
 
 .iconSideBar{
     height: 25px;
-    position: absolute;
-    left: 2%;
-    transition: .5s;
     color: white;
 }
 
@@ -49,14 +88,14 @@ header, p{
         width: 0%;
     }
     to{
-        width: 20%;
+        width: 30%;
     }
 }
 
 @keyframes closeSideBar{
     from{
 
-        width: 20%;
+        width: 30%;
     }
     to{
         width: 0%;
@@ -68,49 +107,18 @@ header, p{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 20%; 
+    width: 30%; 
     height: 100%; 
-    position: fixed; 
     top: 0; 
     left: 0; 
     background-color: var(--color-one); 
     padding-top: 10px; 
     transition: transform 0.3s ease; 
     z-index: 5;
-    animation: openSideBar .5s ease;
-    white-space: nowrap;
-}
-
-.topSideBar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: var(--color-five);
-    height: 5%;
-    width: 100%;
-}
-
-.iconCloseSideBar{
-    position: absolute;
-    right: 10px;
-    height: 7%;
-    width: 7%;
-}
-
-.iconCloseSideBar:hover{
-    cursor: pointer;
-}
-
-.topSideBar, p{
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    overflow: hidden;
-    text-overflow: ellipsis; /* Shows '...' when text overflows */
     white-space: nowrap;
 }
 
 .contentLinksSideBar{
-    margin-top: 10%;
     width: 100%;
 }
 
@@ -155,17 +163,6 @@ header, p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    height: 10%;
-    background-color: var(--color-two);
-    color: white;
+    height: 90%;
 }

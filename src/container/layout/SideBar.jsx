@@ -1,6 +1,5 @@
 import { useContext } from 'react'
-import { SideBarContext } from './SideBarContext'
-import { TitleSideBar } from "./components/TitleSideBar";
+import { SideBarContext } from '../../context/SideBarContext'
 import { ContentSideBar } from './components/ContentSideBar';
 import './style.css';
 
@@ -10,7 +9,6 @@ function SideBar() {
 
     return (
         <div className='sideBar' style={{ display: isSidebarOpen ? 'flex' : 'none' }}>
-            <TitleSideBar eventClose={closeSidebar} style="topSideBar" />
             <ContentSideBar />
         </div>
     )

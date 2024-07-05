@@ -4,7 +4,7 @@ function Projects(){
 
     return (
         <div className="content">
-            a
+            Página Projetos
         </div>
     )
 }
