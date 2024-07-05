@@ -1,9 +1,9 @@
-.containerProjects{
+.containerProjects {
     height: 100%;
     padding: .5em;
 }
 
-.cardFlow{
+.cardFlow {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
@@ -19,28 +19,28 @@
     text-align: center;
 }
 
-.cardFlow::-webkit-scrollbar-thumb{
-    background-color: var(--color-two); 
-    border-radius: 10px;  
+.cardFlow::-webkit-scrollbar-thumb {
+    background-color: var(--color-two);
+    border-radius: 10px;
 }
 
 .cardFlow::-webkit-scrollbar-track {
-    background-color: #b8b0b0; 
-    border-radius: 10px;      
+    background-color: #b8b0b0;
+    border-radius: 10px;
 }
 
 .cardFlow::-webkit-scrollbar {
-    width: 12px;        
-    height: 12px;      
+    width: 12px;
+    height: 12px;
 }
 
-.cardFlow h2{
+.cardFlow h2 {
     /* background-color: blueviolet; */
     height: 18%;
     max-height: 18%;
     width: 90%;
     overflow-x: hidden;
-    overflow-y:hidden;
+    overflow-y: hidden;
     white-space: wrap;
     text-overflow: ellipsis;
     text-transform: none;
@@ -49,12 +49,13 @@
     color: var(--color-five);
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: var(--color-two);
+    opacity: 1;
     color: var(--color-five);
     min-width: 32%;
     height: 90%;
@@ -64,9 +65,46 @@
     padding-left: 5px;
     padding-right: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 2px 0px 5px 2px;
+    transition: .2s;
 }
 
-.cards h2{
+.cards h2 {
     font-size: 1.2rem;
     margin-top: 10px;
+}
+
+.contentAboutCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    height: 40%;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid 1px;
+}
+
+.contentButtonsCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+}
+
+.styleButtons {
+    opacity: .8;
+    border-style: none;
+    width: 48%;
+    height: 50%;
+    border-radius: .3em;
+    transition: .2s;
+    font-size: 1.5rem;
+}
+
+.styleButtons:hover {
+    cursor: pointer;
+    opacity: 1;
 }

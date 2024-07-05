@@ -108,7 +108,7 @@ header, p{
     transition: transform 0.3s ease; 
     z-index: 5;
     white-space: nowrap;
-    /* animation: openSideBar .4s ease; */
+    /* animation: openSideBar .3s ease-out; */
 }
 
 .contentLinksSideBar{
