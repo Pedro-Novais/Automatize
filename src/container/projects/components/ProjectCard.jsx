@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { TitlePage } from "../../../components/TitlePage"
 import { ContentAboutCard } from "./ContentAboutCard"
 import { Buttons } from "../../../components/Buttons"
@@ -7,15 +9,19 @@ import { FaPlay } from "react-icons/fa6";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import { BsJustify } from "react-icons/bs";
 
-export function ProjectCard({ title, state, offerService = false}) {
+export function ProjectCard({ title, stateInfo, statePlay,  offerService = false}) {
+
+    const navigate = useNavigate()
 
     const actionInfo = () => {
-        state('teste', true)
+        stateInfo(true)
     }
 
     const actionPlay = () => {
-        console.log('Rodar a automação!')
+        
+        navigate(`/projects/${statePlay}`)
     }
+
 
     const actionNewService = () => {
         console.log('Soliçitar novos serviços!')

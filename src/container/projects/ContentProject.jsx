@@ -3,14 +3,11 @@ import { ContentPage } from '../../components/ContentPage'
 import { ProjectCard } from './components/ProjectCard'
 import './style.css'
 
-export function ContentProject({ actionState, dataPopup }) {
-
-    const teste = [1,2]
-    const title = ["Automação email cobrança", "Automação email faturamento", "Automação teste", "Chega de automação", "Último titulo"]
+export function ContentProject({ actionState, dataPopup, cardsKey }) {
 
     let typejustify = 'flex-start'
 
-    if (teste.length < 3) {
+    if (cardsKey.length < 3) {
 
         typejustify = 'center'
     }
@@ -29,8 +26,8 @@ export function ContentProject({ actionState, dataPopup }) {
                         style={{
                             justifyContent: `${typejustify}`
                         }}>
-                        {teste.map((element, index) => (
-                            <ProjectCard key={index} title={title[index]} state={actionState} />
+                        {cardsKey.map((element, index) => (
+                            <ProjectCard key={index} title="teste" stateInfo={actionState} statePlay={element} />
                         ))}
 
                         <ProjectCard title='Soliçitar Projeto' offerService={true} />

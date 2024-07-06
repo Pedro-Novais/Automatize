@@ -1,24 +1,35 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { ContentProject } from "./ContentProject"
 import { ContentInfoProject } from "./ContentInfoProject"
+
+import { useFetch } from "../../hooks/useFetch"
+
 function Projects() {
 
-    const [data, setData] = useState(null)
     const [popupInfo, setPopupInfo] = useState(false)
 
-    const viewPopupInfo = (infos, state) => {
+    const { data, loading, error } = useFetch("http://localhost:4000/project")
 
-        setData(infos)
+    const viewPopupInfo = (state) => {
         setPopupInfo(state)
-
     }
-   
+
+    if (loading) {
+
+        return <div>teste</div>
+    }
+
+    if (error) {
+        return <div>{error}</div>
+    }
+
+    console.log(data)
     return (
         <div className="content">
-            <ContentProject actionState={viewPopupInfo} dataPopup = {popupInfo}/>
-            {
-                popupInfo && <ContentInfoProject actionState={viewPopupInfo} />
-            }
+
+            <ContentProject actionState={viewPopupInfo} dataPopup={popupInfo} cardsKey={data.projects.key} />
+            {popupInfo && <ContentInfoProject actionState={viewPopupInfo} />}
+
         </div>
     )
 }
