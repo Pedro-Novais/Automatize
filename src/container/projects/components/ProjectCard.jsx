@@ -7,10 +7,10 @@ import { FaPlay } from "react-icons/fa6";
 import { FaHandHoldingDollar } from "react-icons/fa6";
 import { BsJustify } from "react-icons/bs";
 
-export function ProjectCard({ title, offerService = false }) {
+export function ProjectCard({ title, state, offerService = false}) {
 
     const actionInfo = () => {
-        console.log('visualizar informações!')
+        state('teste', true)
     }
 
     const actionPlay = () => {

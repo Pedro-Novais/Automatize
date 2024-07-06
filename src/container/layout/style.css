@@ -38,7 +38,6 @@ header, p{
     height: 100%;
     padding: .5em;
     border-radius: .2em;
-    border: solid 1px var(--color-five); 
     transition: .2s;
 }
 
