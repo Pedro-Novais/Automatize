@@ -1,7 +1,7 @@
-import { TitlePage } from '../../components/TitlePage'
-import { ContentPage } from '../../components/ContentPage'
+import { TitlePage } from '../../../components/TitlePage'
+import { ContentPage } from '../../../components/ContentPage'
 import { ProjectCard } from './components/ProjectCard'
-import './style.css'
+import '../style.css'
 
 export function ContentProject({ actionState, dataPopup, cardsKey }) {
 

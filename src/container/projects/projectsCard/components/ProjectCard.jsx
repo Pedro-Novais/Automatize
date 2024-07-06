@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import { TitlePage } from "../../../components/TitlePage"
+import { TitlePage } from "../../../../components/TitlePage"
 import { ContentAboutCard } from "./ContentAboutCard"
-import { Buttons } from "../../../components/Buttons"
+import { Buttons } from "../../../../components/Buttons"
 
 import { FaRegClipboard } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa6";

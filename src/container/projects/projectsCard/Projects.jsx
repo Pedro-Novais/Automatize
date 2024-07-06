@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { ContentProject } from "./ContentProject"
 import { ContentInfoProject } from "./ContentInfoProject"
 
-import { useFetch } from "../../hooks/useFetch"
+import { useFetch } from "../../../hooks/useFetch"
 
 function Projects() {
 

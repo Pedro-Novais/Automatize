@@ -1,5 +1,5 @@
 import { ContentAboutCard } from "./components/ContentAboutCard";
-import { Buttons } from "../../components/Buttons";
+import { Buttons } from "../../../components/Buttons";
 import { FaX } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa6";
 
